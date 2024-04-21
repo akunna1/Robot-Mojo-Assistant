@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mojo the Helper</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/wave.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Including jQuery from a CDN (Content Delivery Network) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Need Help?</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    </div>
+  </header><!-- End Header -->
+  
+  <main id="main">
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container position-relative">
+      <h1>Hi, I am Mojo &#x1F44B;</h1>
+      <h2>I was created to serve Lady Akunna, by assisting on her mental health goals</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/robo.png" style="border-radius: 35px;" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h3>More About Me</h3>
+            <p>
+              I am Mojo Jojo. I have many talents, one of them being Akunna's trusted sidekick. My mission? 
+              To keep her motivated and focused every single day. First things first, I check in with her: 
+              "How are you feeling today darling?" Then, we set the tone for the week ahead with her goal. 
+              With a sprinkle of motivation, I remind her of her strength. And to top it off, I suggest
+              resources and a book from her shelf to keep her mind sharp and spirits high. Let's show this week who's boss!
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <i class="bx bx-receipt"></i>
+                <h4>Fun fact about reading</h4>
+                <p>Research has shown that reading for just six minutes can reduce stress levels by up to 68% Now 
+                  that you are aware of that...can you switch off that TV and pick up a book?! </p>
+              </div>
+              <div class="col-md-6">
+                <i class="bx bx-cube-alt"></i>
+                <h4>My phobia</h4>
+                <p>I have a phobia of cubes. Many people have made fun of me because of that. I don't like cubes 
+                  very much, and I don't like such people either. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- Question Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get Help Here</h2>
+          <p>I can find you a solution</p>
+          <br>
+          <form id="help-form"> <!-- Adding form element here -->
+            <div class="questions">
+              <div class="question">
+                <h5>How are you feeling today, darling?</h5>
+                <div class="select-container">
+                  <select id="mood-select" class="custom-select" required>
+                    <option value="" disabled selected>--- Select an emotion ---</option>
+                    <option value="1">Afraid and Anxious &#128552;</option>
+                    <option value="2">Angry &#128545;</option>
+                    <option value="3">Ashamed &#128534;</option>
+                    <option value="4">Discouraged and Overwhelmed &#129301;</option>
+                    <option value="5">Happy and Grateful &#128513;</option>
+                    <option value="6">Incompetent &#128549;</option>
+                    <option value="7">Mildly Irritated &#128580;</option>
+                    <option value="8">Neutral &#128528;</option>
+                    <option value="9">Sad &#128546;</option>
+                  </select>
+                </div>                
+              </div>
+              <br>
+              <div class="question">
+                <h5>Pick a resource to help with emotion</h5>
+                <div class="select-container">
+                  <select id="resource-select" class="custom-select" required>
+                    <option value="" disabled selected>--- Select a resource ---</option>
+                    <option value="1">Book &#128214;</option>
+                    <option value="2">Music &#127926;</option>
+                    <option value="3">Quote &#128172;</option>
+                    <option value="4">Video &#128250;</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <button type="submit" id="submit-btn" class="submit-btn" disabled>Tell Me</button>
+
+            <!-- Response Box Section -->
+            <div id="response-box" class="container response-box">
+              <h5>My Recommendations...</h5>
+            </div>
+
+          </form> <!-- Closing form element here -->
+        </div>
+      </div>
+    </section>
+
+  </main> 
+    
+ <br>
+ 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+<script>
+// Question and Answer Section (jquery)
+$(document).ready(function() {
+  // Getting references to the form elements
+  const moodSelect = $('#mood-select');
+  const resourceSelect = $('#resource-select');
+  const submitBtn = $('#submit-btn');
+  const responseBox = $('#response-box');
+  
+  // Moods
+  // 9-Sad, 8-Neutral, 7-Mildly Irritated, 6-Incompetent, 5-Happy and Grateful, 4-Discouraged and Overwhelmed, 3-Ashamed, 2-Angry, 1-Afraid and Anxious
+    
+  // Adding event listener to the "Tell Me" button
+  submitBtn.on('click', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Clearing the response box before adding new recommendations
+    responseBox.text("");
+    responseBox.hide();
+
+    // Recommendations based on mood and resource
+    const mood = moodSelect.val();
+    const resource = resourceSelect.val();
+
+    if (resource === '1') { // Books
+      if (mood === '9') {
+        responseBox.text("I recommend you reading 'Killing Comparison' by Nona Jones");
+      } else if (mood === '8') {
+        responseBox.text("I recommend you reading 'There Was a Country' by Chinua Achebe, 'Before Saying 'Yes' to The Ring' by Karolyne Roberts, 'Single and Ready to Mingle' by Vladimir Savchuk, ' 'The One' Revealed' by Karolyne Roberts, 'Freshwater' by Akwaeke Emezi, and 'Say You're One of Them' by Uwem Akpan");
+      } else if (mood === '7') {
+        responseBox.text("I recommend you reading 'Dealing with Difficult People' by Harvard Business Review Press");
+      } else if (mood === '6') {
+        responseBox.text("I recommend you reading 'The Total Money Makeover' by Dave Ramsey, 'The Automatic Millionaire' by David Bach, and 'Think and Grow Rich' by Napoleon Hill");
+      } else if (mood === '5') {
+        responseBox.text("I recommend you reading 'Beyond My Dreams' by Olajumoke Adenowo, and 'God's Purpose for Your Life' by Charles F. Stanley");
+      } else if (mood === '4') {
+        responseBox.text("I recommend you reading 'The Alone Advantage' by Terri Savelle Foy");
+      } else if (mood === '3') {
+        responseBox.text("I recommend you reading 'I Thought It Was Just Me' by Brené Brown, and 'The Gifts of Imperfection' by Brené Brown");
+      } else if (mood === '2') {
+        responseBox.text("I recommend you reading 'Forgiving What You Can't Forget' by Lysa TerKeurst");
+      } else if (mood === '1') {
+        responseBox.text("I recommend you reading 'Try Softer' by Aundi Kolber, 'Get Out of Your Head' by Jennie Allen, 'The Body Keeps the Score' by Bessel van der Kolk");
+      }
+
+    } else if (resource === '2') { // Music
+      if (mood === '9') {
+        responseBox.text("I recommend you listening to 'Lost in Space' by Lighthouse Family, 'Do Like Say' by Ric Hassani, 'Praise' by Elevation Worship, 'Aye Mama' by Chief Stephen Osita Osadebe, and 'Ololufe' by Wande Coal");
+      } else if (mood === '8') {
+        responseBox.text("I recommend you listening to 'Onuigbo' by Chief Stephen Osita Osadebe, 'Love and Trials' by The Cavemen, 'Love Adure' by Sunny Bobo, and 'Shakara' by Fela Kuti");
+      } else if (mood === '7') {
+        responseBox.text("I recommend you listening to 'The Climb' by Miley Cyrus, 'Love You Anyway' by Ric Hassani, and 'Bless the Broken Road' by Rascal Flatts");
+      } else if (mood === '6') {
+        responseBox.text("I recommend you listening to 'All Things Are Possible' by Hillsong Worship, 'I Know Who I am' by Sinach, and 'Jireh' by Elevation Worship");
+      } else if (mood === '5') {
+        responseBox.text("I recommend you listening to 'Good Times' by The Cavemen,  'Now is the Time' by Ikechukwu, 'Good Good Father' by Chris Tomlin, 'Brother's Keeper' by The Cavemen, and 'Bianule' by Samsong");
+      } else if (mood === '4') {
+        responseBox.text("I recommend you listening to 'Trust in God' by Elevation Worship, 'Firm Foundation' by Maverick City Music, and 'Run To The Father' by Cody Carnes  ");
+      } else if (mood === '3') {
+        responseBox.text("I recommend you listening to 'All Things Are Possible' by Hillsong Worship, 'July' by Noah Cyrus, 'If I Didn't Know Better' by Luther Vandross, and 'Here' by Ric Hassani");
+      } else if (mood === '2') {
+        responseBox.text("I recommend you listening to 'Shuffering & Smiling' by Fela Kuti");
+      } else if (mood === '1') {
+        responseBox.text("I recommend you listening to 'This is a Move' by Brandon Lake, 'Shout To the Lord' by Hilsong Worship, 'Fear Is Not My Future' by Maverick City Music, and 'Build My Life' by Pat Barrett");
+      }
+     
+    } else if (resource === '3') { // Quotes
+      if (mood === '9') {
+        responseBox.text("Trust God and enjoy life as much as possible, you are loved");
+      } else if (mood === '8') {
+        responseBox.text("Nothing apart from God will make you happy, quit waiting for perfection, permission, reassurance, inspiration, for someone to change, for the right person to come along, for someone to discover me and a clear set of instructions");
+      } else if (mood === '7') {
+        responseBox.text("Trust God, not money, you are not a loser, stand up and keep going");
+      } else if (mood === '6') {
+        responseBox.text("Sharpen your mind, read your books, continue working hard, you are capable just like the others, stop second guessing yourself, you are smart, you are able");
+      } else if (mood === '5') {
+        responseBox.text("Say things you are grateful for");
+      } else if (mood === '4') {
+        responseBox.text("Don't rush, you will suceed, you are succeeding, you will be able to afford your rent each month, you will have more sources of income, stop worring and start praying");
+      } else if (mood === '3') {
+        responseBox.text("Prove people wrong, don't do things you're not 100% comfortable with, go away trauma, hurt, past sin, shame and mistakes, you will not weigh me down! I have a bright future ahead of me! You are all banished in the name of Jesus.");
+      } else if (mood === '2') {
+        responseBox.text("For every complain, say 10 things your are grateful for");
+      } else if (mood === '1') {
+        responseBox.text("Stop allowing anxiety destroy your plans, be courageous and step out in faith, be vocal about what is causing you anxiety, some fears are intangible");
+      }
+
+    } else if (resource === '4') { // Video
+      if (mood === '9') {
+        responseBox.text("I recommend you watching 'Ask Big' by Terri Savelle Foy, and 'Indicator of Where Your Life is Headed' by Terri Savelle Foy");
+      } else if (mood === '8') {
+        responseBox.text("I recommend you watching 'Ask Big' by Terri Savelle Foy");
+      } else if (mood === '7') {
+        responseBox.text("I recommend you watching 'Burn It All' by Nona Jones");
+      } else if (mood === '6') {
+        responseBox.text("I recommend you watching 'Killing Comparison' by Nona Jones, and 'The Gift of Rejection' by Nona Jones");
+      } else if (mood === '5') {
+        responseBox.text("I recommend you watching 'The Power Of Consistency' by Stephanie Ike");
+      } else if (mood === '4') {
+        responseBox.text("I recommend you watching '5 Things Successful People Do Before 8AM' by Terri Savelle Foy, 'Pruning for Progress' by Nona Jones, and 'How to Stay Encouraged During Discouragement' by Nona Jones");
+      } else if (mood === '3') {
+        responseBox.text("I recommend you watching 'How to Defeat Shame' by Nona Jones");
+      } else if (mood === '2') {
+        responseBox.text("I recommend you watching 'Indicator of Where Your Life is Headed' by Terri Savelle Foy, and 'How to Hear the Voice of God' by Nona Jones");
+      } else if (mood === '1') {
+        responseBox.text("I recommend you watching 'How to Build Purpose Out of Pain' by Nona Jones");
+      }
+    }
+
+    // Showing the response box if there's a recommendation
+    if (responseBox.text() !== "") {
+      responseBox.show();
+    }
+  });
+
+  // Adding event listeners to select elements to enable/disable the button
+  moodSelect.on('change', enableOrDisableButton);
+  resourceSelect.on('change', enableOrDisableButton);
+
+  // Function to enable or disable the button based on select values
+  function enableOrDisableButton() {
+    submitBtn.prop('disabled', moodSelect.val() === "" || resourceSelect.val() === "");
+  }
+});
+
+
+// For Get Started Button
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollLinks = document.querySelectorAll('.scrollto');
+  
+  scrollLinks.forEach(function(scrollLink) {
+    scrollLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+});
+</script>
