@@ -1,4 +1,4 @@
-#### Projected was upgraded to include a database: https://github.com/akunna1/Mojo-Web-AppAbsolutely! Here's the updated README for the **legacy front-end version** of your **Mojo** project, now including a note about the upgraded version with database integration:
+#### Projected was upgraded to include a database: https://github.com/akunna1/Mojo-Web-App
 
 ---
 
